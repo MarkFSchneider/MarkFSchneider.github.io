@@ -16,11 +16,11 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   
   <title>Home</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=519610744" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=44246656"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4187593659" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=4129652434" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=3861964852" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -31,22 +31,29 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    </head>
  <body>
 
-  <div class="breakpoint active" id="bp_infinity" data-min-width="1126"><!-- responsive breakpoint node -->
-   <div class="clearfix borderbox" id="page"><!-- column -->
-    <div class="clearfix colelem shared_content" id="u453-6" data-content-guid="u453-6_content"><!-- content -->
-     <p>Still building. For now, you can download my portfolio <a class="nonblock" href="assets/temp-portfolio-file.pdf"><span id="u453-2">here</span></a></p>
-    </div>
-    <div class="museBGSize colelem shared_content" id="u580" data-content-guid="u580_content"><!-- simple frame -->
+  <div class="breakpoint active" id="bp_infinity" data-min-width="421"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- group -->
+    <div class="museBGSize grpelem" id="u580"><!-- simple frame -->
      <div class="fluid_height_spacer"></div>
+    </div>
+    <div class="Larger clearfix grpelem" id="u837-7"><!-- content -->
+     <p>Still building. For now, you can download my portfolio<span title="Portfolio.pdf"> </span><a class="nonblock" href="assets/schneider-portfolio.pdf" target="_blank" title="Portfolio.pdf">here</a></p>
     </div>
     <div class="verticalspacer" data-offset-top="1105" data-content-above-spacer="1105" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
-  <div class="breakpoint" id="bp_1125" data-max-width="1125"><!-- responsive breakpoint node -->
-   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <span class="museBGSize grpelem placeholder" data-placeholder-for="u580_content"><!-- placeholder node --></span>
-    <span class="clearfix grpelem placeholder" data-placeholder-for="u453-6_content"><!-- placeholder node --></span>
-    <div class="verticalspacer" data-offset-top="570" data-content-above-spacer="570" data-content-below-spacer="288" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  <div class="breakpoint" id="bp_420" data-max-width="420"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="browser_width colelem" id="u580-bw">
+     <div class="museBGSize temp_no_id" data-orig-id="u580"><!-- group -->
+      <div class="clearfix" id="u580_align_to_page">
+       <div class="Smaller clearfix grpelem" id="u453-6"><!-- content -->
+        <p>Still building. For now, you can download my portfolio <a class="nonblock" href="assets/schneider-portfolio.pdf">here</a></p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="226" data-content-above-spacer="225" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
   <!-- Other scripts -->
@@ -64,6 +71,8 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
 Muse.Utils.fullPage('#page');/* 100% height page */
 $( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
