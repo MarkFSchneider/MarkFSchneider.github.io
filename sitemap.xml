@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://markfs.com/index.html</loc>
-    <lastmod>2018-10-14</lastmod>
+    <lastmod>2018-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://markfs.com/images/pasted-svg-189191x189.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://markfs.com/images/pasted-svg-189191x1892.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://markfs.com/images/pasted-svg-189191x1893.svg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://markfs.com/assets/schneider_portfolio.pdf</loc>
+    <lastmod>2018-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -13,8 +28,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://markfs.com/assets/schneider-portfolio.pdf</loc>
-    <lastmod>2018-10-14</lastmod>
+    <loc>http://markfs.com/assets/schneider_cover.pdf</loc>
+    <lastmod>2018-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://markfs.com/assets/schneider_resume.pdf</loc>
+    <lastmod>2018-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
