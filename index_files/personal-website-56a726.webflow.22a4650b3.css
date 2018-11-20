@@ -1,4 +1,4 @@
-/* Generated on: Mon Nov 19 2018 07:48:35 GMT+0000 (UTC) */
+/* Generated on: Tue Nov 20 2018 01:05:52 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -39,6 +39,9 @@
 .link-block {
   display: inline-block;
   padding: 20px;
+  background-color: #374a9f;
+  -webkit-transition: background-color 1000ms cubic-bezier(.165, .84, .44, 1);
+  transition: background-color 1000ms cubic-bezier(.165, .84, .44, 1);
   font-family: Lato, sans-serif;
   color: #fff;
   font-size: 18px;
@@ -46,7 +49,29 @@
   text-decoration: none;
 }
 
+.link-block:hover {
+  background-color: #6977b7;
+}
+
+.link-block:active {
+  background-color: #9ba5cf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9ba5cf), to(#9ba5cf));
+  background-image: linear-gradient(180deg, #9ba5cf, #9ba5cf);
+}
+
 .grid-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   -ms-grid-columns: 1fr;
@@ -56,8 +81,14 @@
 }
 
 .div-block-2 {
+  height: 20%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(180deg, #fff, #fff);
+}
+
+.div-block-2.blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#374a9f), to(#374a9f)), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(180deg, #374a9f, #374a9f), linear-gradient(180deg, #fff, #fff);
 }
 
 .div-block-3 {
@@ -74,6 +105,10 @@
   background-attachment: scroll;
 }
 
+.text-block {
+  padding: 20px;
+}
+
 @media (max-width: 991px) {
   .main-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
@@ -81,14 +116,21 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .link-block {
-    padding: 10px;
-    font-size: 11px;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }
 
-#w-node-e067ce89b824-6855c6df {
+@media (max-width: 479px) {
+  .link-block {
+    padding: 7px;
+    font-size: 9px;
+  }
+}
+
+#w-node-7f511c9599da-1c9599d9 {
   -ms-grid-column: 2;
   grid-column-start: 2;
   -ms-grid-column-span: 1;
@@ -105,7 +147,7 @@
   align-self: center;
 }
 
-#w-node-6e8889fde010-6855c6df {
+#w-node-7f511c9599e4-1c9599d9 {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-span: 1;
@@ -114,26 +156,4 @@
   grid-row-start: 1;
   -ms-grid-row-span: 1;
   grid-row-end: 2;
-}
-
-#w-node-5194124b576a-6855c6df {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-}
-
-#w-node-3111ada27575-6855c6df {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 4;
-  grid-row-start: 4;
-  -ms-grid-row-span: 1;
-  grid-row-end: 5;
 }
