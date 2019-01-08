@@ -1,4 +1,4 @@
-/* Generated on: Mon Dec 10 2018 03:55:45 GMT+0000 (UTC) */
+/* Generated on: Tue Jan 08 2019 18:10:12 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -233,8 +233,8 @@ a {
   top: 69px;
   bottom: 28px;
   overflow: hidden;
-  width: 88%;
-  padding: 20px 22px 22px;
+  width: 224px;
+  padding: 16px 22px 22px;
   background-color: rgba(55, 74, 159, .8);
   color: #fff;
 }
@@ -392,6 +392,12 @@ a {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+.div-block-12 {
+  width: 50px;
+  height: 50px;
+  background-color: #374a9f;
 }
 
 @media (max-width: 991px) {
